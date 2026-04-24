@@ -1,0 +1,72 @@
+ API Security Risk Analysis – ReqRes Demo API
+
+ Project Overview
+This repository documents a **read-only API Security Risk Analysis** conducted on the ReqRes testing environment ([https://reqres.in](https://reqres.in)).  
+The objective was to simulate the **initial discovery phase** of a security audit, identifying misconfigurations and risks associated with modern SaaS API integrations.
+
+---
+
+ Table of Contents
+1. Executive Summary  
+   - Project Overview  
+   - Assessment Methodology  
+   - Overall Security Posture  
+   - Summary of Critical Findings  
+
+2. Scope & Methodology  
+   - Target API Endpoints  
+   - Tools Utilized  
+   - Ethical Boundaries & Constraints  
+   - Methodology Flowchart  
+
+3. API Security Risk Analysis  
+   - Technical Evidence & Inspection  
+   - Technical Discovery Summary  
+   - Authentication Enforcement  
+   - OWASP API Risk Mapping  
+   - Data Exposure Assessment  
+   - Final Audit Conclusion  
+
+4. Identified Vulnerabilities & Risks  
+   - Risk #1: Excessive Information Disclosure  
+   - Risk #2: Infrastructure Fingerprinting  
+   - Risk #3: Permissive CORS Policy  
+   - Risk Summary & Prioritization Matrix  
+
+5. Remediation Strategy  
+   - Immediate Technical Recommendations  
+   - Long-Term Security Roadmap  
+
+6. Conclusion  
+   - Final Audit Summary  
+   - Security Posture Assessment  
+   - Final Statement  
+
+---
+
+ Key Findings
+- **Medium Risk:** Verbose error messages exposing internal documentation and hints.  
+- **Low Risk:** Infrastructure fingerprinting via server headers.  
+- **Medium Risk:** Permissive CORS policy allowing wildcard origins.  
+
+---
+
+ Remediation Highlights
+- Implement **generic error responses** to prevent instructional leakage.  
+- Apply **header sanitization** to mask infrastructure details.  
+- Harden **CORS policies** with domain whitelisting.  
+- Introduce **rate limiting** and **automated security scanning** in CI/CD pipelines.  
+
+---
+
+ Compliance Alignment
+This audit aligns with:  
+- **OWASP API Security Top 10 (2023)**  
+- **ISO/IEC 27001**  
+- **NIST SP 800-53**  
+
+---
+
+ Author
+Prepared by: **Akonaho Makhado**   
+Date of Assessment: April 23, 2026
