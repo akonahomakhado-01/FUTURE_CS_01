@@ -1,0 +1,39 @@
+# Phishing Awareness & Detection – Task 2  
+
+## 📌 Project Overview  
+This repository documents my internship project on **phishing detection and awareness**. The focus is on analyzing phishing emails, identifying technical red flags, and proposing business‑friendly defense strategies.  
+
+## 🎯 Objectives  
+- Perform forensic analysis of phishing samples.  
+- Identify social engineering tactics (urgency, spoofing, typosquatting).  
+- Conduct technical header inspection (SPF, DKIM, DMARC).  
+- Classify risks and propose mitigation strategies.  
+- Develop an awareness framework for employees.  
+
+## 🛠️ Tools & Frameworks  
+- **Google Admin Toolbox** – Messageheader Analysis.  
+- **SPF/DKIM/DMARC** – Authentication checks.  
+- **OWASP & MITRE ATT&CK (T1566)** – Industry frameworks for phishing classification.  
+
+##  Key Findings  
+- Attack leveraged Gmail infrastructure to bypass filters (SPF/DKIM: PASS).  
+- Fraudulent sender identity masked by display name impersonation.  
+- Malicious links hosted on typosquatted domains.  
+- Risk level classified as **CRITICAL**.  
+
+##  Recommendations  
+- Implement **Multi‑Factor Authentication (MFA)** across portals.  
+- Adopt the **Look‑Hover‑Report** awareness protocol.  
+- Conduct regular **phishing simulations** for staff training.  
+- Enforce **DMARC reject policy** to prevent brand spoofing.  
+
+##  References  
+- NIST Cybersecurity Framework (CSF)  
+- MITRE ATT&CK Framework – Phishing (T1566)  
+- IETF RFC 7208 & RFC 6376  
+- Cisco Networking Academy – Junior Cybersecurity Analyst Pathways  
+
+---
+
+ 
+ 
